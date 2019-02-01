@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Title - Brain Imaging Data Structure v1.1.2</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">Brain Imaging Data Structure v1.1.2</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">The BIDS Specification <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="01-introduction_TOC.html">Title</a>
+</li>
+                                    
+<li >
+    <a href="01-introduction.html">Introduction</a>
+</li>
+                                    
+<li >
+    <a href="02-common-principles.html">Common principles</a>
+</li>
+                                    
+<li >
+    <a href="03-modality-agnostic-files.html">Modality agnostic files</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Modality specific files</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html">Magnetic Resonance Imaging</a>
+</li>
+            
+<li >
+    <a href="04-modality-specific-files/02-magnetoencephalography.html">Magnetoencephalography</a>
+</li>
+            
+<li >
+    <a href="04-modality-specific-files/03-task-events.html">Task events</a>
+</li>
+            
+<li >
+    <a href="04-modality-specific-files/04-physiological-and-other-continous-recordings.html">Physiological and other continous recordings</a>
+</li>
+            
+<li >
+    <a href="04-modality-specific-files/05-behavioural-experiments.html">Behavioral experiments (with no MRI)</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="05-longitudinal-and-multi-site-studies.html">Longitudinal and multi-site studies</a>
+</li>
+                                    
+<li >
+    <a href="06-extensions.html">Extending the BIDS specification</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Appendix</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="99-appendices/01-contributors.html">Contributors</a>
+</li>
+            
+<li >
+    <a href="99-appendices/02-licenses.html">Licenses</a>
+</li>
+            
+<li >
+    <a href="99-appendices/03-hed.html">HED</a>
+</li>
+            
+<li >
+    <a href="99-appendices/04-entity-table.html">Entity-table</a>
+</li>
+            
+<li >
+    <a href="99-appendices/05-units.html">Units</a>
+</li>
+            
+<li >
+    <a href="99-appendices/06-meg-file-formats.html">MEG file formats</a>
+</li>
+            
+<li >
+    <a href="99-appendices/07-meg-systems.html">MEG systems</a>
+</li>
+            
+<li >
+    <a href="99-appendices/08-coordinate-systems.html">Coordinate-systems</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="CHANGES.html">Changelog</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="https://github.com/bids-standard/bids-starter-kit">The BIDS Starter Kit</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="01-introduction.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>The Brain Imaging Data Structure (BIDS) Specification</p>
+<p>Version 1.1.2</p>
+<p>Available under the CC-BY 4.0 International license</p>
+<p>Table of contents</p>
+<ul>
+<li><a href="01-introduction.html#introduction">Introduction</a></li>
+<li><a href="01-introduction.html#motivation">Motivation</a></li>
+<li><a href="01-introduction.html#extensions">Extensions</a></li>
+<li><a href="01-introduction.html#citing-bids">Citing BIDS</a></li>
+<li><a href="02-common-principles.html#common-principles">Common principles</a></li>
+<li><a href="02-common-principles.html#definitions">Definitions</a></li>
+<li><a href="02-common-principles.html#compulsory-optional-and-additional-data-and-metadata">Compulsory, optional, and additional data and metadata</a></li>
+<li><a href="02-common-principles.html#source-vs-raw-vs-derived-data">Source vs. raw vs. derived data</a></li>
+<li><a href="02-common-principles.html#the-inheritance-principle">The Inheritance Principle</a><ul>
+<li><a href="02-common-principles.html#good-practice-recommendations">Good practice recommendations</a></li>
+</ul>
+</li>
+<li><a href="02-common-principles.html#file-formation-specification">File Formation specification</a><ul>
+<li><a href="02-common-principles.html#imaging-files">Imaging files</a></li>
+<li><a href="02-common-principles.html#tabular-files">Tabular files</a></li>
+</ul>
+</li>
+<li><a href="02-common-principles.html#keyvalue-files-dictionaries">Key/value files (dictionaries)</a></li>
+<li><a href="02-common-principles.html#participant-names-and-other-labels">Participant names and other labels</a></li>
+<li><a href="02-common-principles.html#units">Units</a></li>
+<li><a href="02-common-principles.html#directory-structure">Directory structure</a><ul>
+<li><a href="02-common-principles.html#single-session-example">Single session example</a></li>
+</ul>
+</li>
+<li><a href="03-modality-agnostic-files.html#modality-agnostic-files">Modality-agnostic files</a></li>
+<li><a href="03-modality-agnostic-files.html#dataset-description">Dataset description</a><ul>
+<li><a href="03-modality-agnostic-files.html#dataset_descriptionjson"><code>dataset_description.json</code></a></li>
+<li><a href="03-modality-agnostic-files.html#readme"><code>README</code></a></li>
+<li><a href="03-modality-agnostic-files.html#changes"><code>CHANGES</code></a></li>
+</ul>
+</li>
+<li><a href="03-modality-agnostic-files.html#participants-file">Participants file</a></li>
+<li><a href="03-modality-agnostic-files.html#scans-file">Scans file</a></li>
+<li><a href="03-modality-agnostic-files.html#code">Code</a></li>
+<li>Modality-specific-files<ul>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#magnetic-resonance-imaging-data">Magnetic Resonance Imaging data</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#common-metadata-fields">Common metadata fields</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#scanner-hardware">Scanner Hardware</a><ul>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#sequence-specifics">Sequence Specifics</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#in-plane-spatial-encoding">In-Plane Spatial Encoding</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#timing-parameters">Timing Parameters</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#rf--contrast">RF &amp; Contrast</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#slice-acceleration">Slice Acceleration</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#anatomical-landmarks">Anatomical landmarks</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#institution-information">Institution information</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#anatomy-imaging-data">Anatomy imaging data</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#task-including-resting-state-imaging-data">Task (including resting state) imaging data</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#required-fields">Required fields</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#other-recommended-metadata">Other RECOMMENDED metadata</a><ul>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#timing-parameters-1">Timing Parameters</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#fmri-task-information">fMRI task information</a></li>
+</ul>
+</li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#diffusion-imaging-data">Diffusion imaging data</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#fieldmap-data">Fieldmap data</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#phase-difference-image-and-at-least-one-magnitude-image">Phase difference image and at least one magnitude image</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#two-phase-images-and-two-magnitude-images">Two phase images and two magnitude images</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#a-real-fieldmap-image">A real fieldmap image</a></li>
+<li><a href="04-modality-specific-files/01-magnetic-resonance-imaging-data.html#case-4-multiple-phase-encoded-directions-pepolar">Case 4: Multiple phase encoded directions ("pepolar")</a></li>
+</ul>
+</li>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#magnetoencephalography-meg">Magnetoencephalography (MEG)</a></li>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#meg-recording-data">MEG recording data</a><ul>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#sidecar-json-document-_megjson">Sidecar JSON document (<code>*_meg.json</code>)</a></li>
+</ul>
+</li>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#channels-description-table-_channelstsv">Channels description table (<code>*_channels.tsv</code>)</a></li>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#coordinate-system-json-document-_coordsystemjson">Coordinate System JSON document (<code>*_coordsystem.json</code>)</a><ul>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#landmark-photos-_photojpg">Landmark photos (<code>*_photo.jpg</code>)</a></li>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#3-d-head-point-electrode-locations-file">3-D head point /electrode locations file</a></li>
+<li><a href="04-modality-specific-files/02-magnetoencephalography.html#empty-room-files-sub-emptyroom">Empty-room files (<code>sub-emptyroom</code>)</a></li>
+</ul>
+</li>
+<li><a href="04-modality-specific-files/03-task-events.html#task-events">Task events</a></li>
+<li><a href="04-modality-specific-files/04-physiological-and-other-continous-recordings.html#physiological-and-other-continuous-recordings">Physiological and other continuous recordings</a></li>
+<li><a href="04-modality-specific-files/05-behavioural-experiments.html#behavioral-experiments-with-no-mri">Behavioral experiments (with no MRI)</a></li>
+</ul>
+</li>
+<li><a href="05-longitudinal-and-multi-site-studies.html#longitudinal-studies-with-multiple-sessions-visits">Longitudinal studies with multiple sessions (visits)</a></li>
+<li><a href="05-longitudinal-and-multi-site-studies.html#sessions-file">Sessions file</a></li>
+<li><a href="05-longitudinal-and-multi-site-studies.html#multi-site-or-multi-center-studies">Multi-site or multi-center studies</a><ul>
+<li><a href="05-longitudinal-and-multi-site-studies.html#treat-each-sitecenter-as-a-separate-dataset">Treat each site/center as a separate dataset</a></li>
+<li><a href="05-longitudinal-and-multi-site-studies.html#option-2-combining-sitescenters-into-one-dataset">Option 2: Combining sites/centers into one dataset</a></li>
+</ul>
+</li>
+<li><a href="06-extensions.html#contributing-to-and-extending-the-bids-specification">Contributing to and extending the BIDS specification</a></li>
+<li><a href="06-extensions.html#contributing-to-bids">Contributing to BIDS</a><ul>
+<li><a href="06-extensions.html#the-bids-starter-kit">The BIDS Starter Kit</a></li>
+<li><a href="06-extensions.html#the-bids-contributor-guide">The BIDS Contributor guide</a></li>
+</ul>
+</li>
+<li><a href="06-extensions.html#bids-extension-proposals">BIDS Extension Proposals</a></li>
+<li>Appendices<ul>
+<li><a href="99-appendices/01-contributors.html#appendix-i-contributors">Appendix I: Contributors</a></li>
+<li><a href="99-appendices/02-licenses.html#appendix-ii-licenses">Appendix II: Licenses</a></li>
+<li><a href="99-appendices/03-hed.html#appendix-iii-hierarchical-event-descriptor-hed-tags">Appendix III: Hierarchical Event Descriptor (HED) Tags</a></li>
+<li><a href="99-appendices/04-entity-table.html#appendix-iv-entity-table">Appendix IV: Entity table</a></li>
+<li><a href="99-appendices/05-units.html#appendix-v-units">Appendix V: Units</a></li>
+<li><a href="99-appendices/05-units.html#prefixes">Prefixes</a><ul>
+<li><a href="99-appendices/05-units.html#multiples">Multiples</a></li>
+<li><a href="99-appendices/05-units.html#submultiples">Submultiples</a></li>
+</ul>
+</li>
+<li><a href="99-appendices/06-meg-file-formats.html#appendix-vi-meg-file-formats">Appendix VI: MEG file formats</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#ctf">CTF</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#neuromagelektamegin">Neuromag/Elekta/MEGIN</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#bti4d-neuroimaging">BTi/4D neuroimaging</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#kityokogawaricoh">KIT/Yokogawa/Ricoh</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#kriss">KRISS</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#itab">ITAB</a></li>
+<li><a href="99-appendices/06-meg-file-formats.html#aalto-meg%E2%80%93mri">Aalto MEG–MRI</a></li>
+<li><a href="99-appendices/07-meg-systems.html#appendix-vii-preferred-names-of-meg-systems">Appendix VII: preferred names of MEG systems</a></li>
+<li><a href="99-appendices/08-coordinate-systems.html#appendix-viii-preferred-names-of-coordinate-systems">Appendix VIII: preferred names of Coordinate systems</a></li>
+<li><a href="99-appendices/08-coordinate-systems.html#meg-specific-coordinate-systems">MEG specific Coordinate Systems</a></li>
+<li><a href="99-appendices/08-coordinate-systems.html#eeg-specific-coordinate-systems">EEG specific Coordinate Systems</a></li>
+<li><a href="99-appendices/08-coordinate-systems.html#template-based-coordinate-systems">Template based Coordinate Systems</a></li>
+</ul>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
